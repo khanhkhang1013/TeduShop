@@ -8,14 +8,21 @@ using System.Threading.Tasks;
 
 namespace TeduShop.Model.Models
 {
-    [Table("MenuGroups")]
-   public class MenuGruop
+
+    [Table("SupportOnlines")]
+    public  class SupportOnline
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { set; get; }
         [Required]
         public string Name { set; get; }
-        public virtual IEnumerable<Menu> Menus { set; get; }
+        public string dipasmem { set; get; }
+        public string Skype { set; get; }
+        public string Mobile { set; get; }
+        public string Email { set; get; }
+        public bool? Status { set; get; }
+
+
+
     }
 }

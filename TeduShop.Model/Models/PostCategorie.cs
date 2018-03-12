@@ -8,22 +8,27 @@ using System.Threading.Tasks;
 
 namespace TeduShop.Model.Models
 {
-   [Table("ProductCategories")]
-   public class ProductCategory
+    [Table("PostCategories")]
+    public class PostCategorie
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { set; get;}
+        public int ID { set; get; }
         [Required]
         public string Name { set; get; }
         [Required]
         public string Alias { set; get; }
-        public int? ParentID { set; get; }
-        public  int? DislayOder { set; get; }
+        [Key]
+        public int ParentID { set; get; }
+        public int? DislayOder { set; get; }
         public string Discriptint { set; get; }
         public string Image { set; get; }
+        public string Metakeyword { set; get; }
+        public string matadiscription { set; get; }
+        public bool? Status { set; get; }
         public bool? HomeFlag { set; get; }
-        public virtual IEnumerable<Product> Products { set; get; }
-       
-    }   
+
+
+    }
+
+
 }

@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace TeduShop.Model.Models
 {
-    [Table("MenuGroups")]
-   public class MenuGruop
+    [Table("PostTags")]
+    public class PostTag
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { set; get; }
-        [Required]
-        public string Name { set; get; }
-        public virtual IEnumerable<Menu> Menus { set; get; }
+        public int PastID { set; get; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int TabID { set; get; }
     }
 }
