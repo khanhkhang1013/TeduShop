@@ -50,6 +50,7 @@
     <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\MenuGruop.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductCategorie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
